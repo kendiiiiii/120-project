@@ -18,7 +18,7 @@ while running:
         if event.type == pygame.QUIT:
             running = False
 
-    # Update the display
+    # Update the display serious?
     pygame.display.flip()
 
 # Quit Pygame
