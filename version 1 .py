@@ -21,6 +21,7 @@ download_image(image_url, image_filename)
 def show_title_screen(screen):
     
     title_image = pygame.image.load(image_filename).convert()
+    title_image = pygame.transform.scale(title_image, (screen_width, screen_height))
     font = pygame.font.Font(None, 74)
     
     title_running = True
