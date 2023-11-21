@@ -1,0 +1,12 @@
+def check_for_trap(player_pos, maze):
+    x, y = player_pos
+    return maze[y][x] == "T"
+
+while True:
+    print_maze(maze, player_pos)
+    move = input("Move (w/a/s/d): ")
+    player_pos = move_player(player_pos, move, maze)
+
+    if check_for_trap(player_pos, maze):
+        print("You fell into a trap! Game over.")
+        break
